@@ -10,6 +10,7 @@ import { CartService } from '../cart.service';
 })
 export class ShowProductComponent implements OnInit {
   @Input() product: Product;
+
   constructor(private router: Router,
             private cartService: CartService) { }
 
@@ -17,7 +18,8 @@ export class ShowProductComponent implements OnInit {
   }
 
   addToCart() {
-    this.cartService.add(this.product._id);
+    // alert('add clicked');
+    this.cartService.addProduct(this.product._id);
   }
 
 }

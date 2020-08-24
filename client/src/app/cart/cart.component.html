@@ -1,1 +1,9 @@
 <h1>Cart</h1>
+<div >
+    <div *ngFor="let product of cartList">
+        <button (click)="removeFromCartList(product._id)" style="float: left;">
+            remove
+        </button>
+        <a>{{product.title}}</a>
+    </div>
+</div>

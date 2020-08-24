@@ -1,4 +1,4 @@
-<div style="width: 210px;">
+<div class="product-container">
     <img class="product-image" [src]="product.picture" alt="image">
     <div class="product-title">
         <a [routerLink]="['product', product._id]">{{product.title}}</a>
@@ -8,6 +8,8 @@
     </div>
     <div>
         <p>{{product.stock}}</p>
-        <button (click)="addToCart">Add to cart</button>
+    </div>
+    <div>
+        <button (click)="addToCart()">Add to cart</button>
     </div>
 </div>
