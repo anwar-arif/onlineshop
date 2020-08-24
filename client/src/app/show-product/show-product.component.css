@@ -1,0 +1,18 @@
+.product-container {
+    width: 50px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none
+}
+
+.product-title {
+    width: 20px; 
+    align-content: center;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
